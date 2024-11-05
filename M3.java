@@ -1,66 +1,20 @@
-
-class Shape
-{
-	public void draw()
-        {
-		System.out.println("Drawing a shape");
-        }
-	public void erase() 
-        {
-		System.out.println("Erasing a shape");
-        }
-}
-class Circle extends Shape
-{
-        @Override
-	public void draw() 
-        {
-		System.out.println("Drawing a circle");
-        }
-        @Override
-	public void erase() 
-        {
-		System.out.println("Erasing a circle");
-        }
-}
-class Triangle extends Shape
-{
-	@Override
-	public void draw()
-        {
-		System.out.println("Drawing a triangle");
-        }
-        @Override
-	public void erase() 
-        {
-		System.out.println("Erasing a triangle");
-        }
-}
-class Square extends Shape
-{
-	@Override
-	public void draw()
-        {
-		System.out.println("Drawing a square");
-        }
-        @Override
-	public void erase() 
-        {
-		System.out.println("Erasing a square");
-        }
-}
+package pkg1;
 
 public class M3 {
-	public static void main(String[] args)
-        {
-		Shape[] shapes=new Shape[3]; 
-		shapes[0]=new Circle();
-		shapes[1]=new Triangle();
-		shapes[2]=new Square();
-		for(int i=0;i<shapes.length;i++) {
-			shapes[i].draw(); 
-			shapes[i].erase();
-			System.out.println("------------");
-                }
-        }
+	public static void reverse(String s1) {
+		String s2="";
+		int len1=s1.length();
+		for(int i=0;i<len1;i++) {
+			s2=s2+s1.substring(len1-(i+1),len1-i);
+		}
+        System.out.println(s2);
+	}
+
+	public static void main(String[] args) {
+		reverse("Madan");
+		reverse("Manikanta");
+		reverse("Chandrashekar Rao Kuthyar");
+		
+	}
+
 }

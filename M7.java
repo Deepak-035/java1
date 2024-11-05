@@ -1,5 +1,6 @@
-package pkg1;
-class Tools{
+package pkg2;
+import pkg2.Tools2;
+class Tools2{
 	String s1="";
 	String s2="";
 	int len1=0;
@@ -11,13 +12,13 @@ class Tools{
 		return s2;
 	}
 }
+public class M7 {
 
-public class M5 {
 	public static void main(String[] args) {
-		Tools t1=new Tools();
-		System.out.println(t1.reverse("DEEPAK"));
+		Tools2 t1=new Tools2();
+		System.out.println(t1.reverse("Deeepak"));
 		
-		
+
 	}
 
-}
+} 
